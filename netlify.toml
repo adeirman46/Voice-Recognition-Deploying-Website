@@ -1,3 +1,0 @@
-[build]
-  command = "pip install flask && python flask_app.py"
-  publish = "static"
