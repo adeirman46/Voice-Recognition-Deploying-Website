@@ -1,4 +1,4 @@
-autopep8==2.0.2
+autopep8==2.0.0
 brotlipy==0.7.0
 certifi @ file:///croot/certifi_1671487769961/work/certifi
 cffi @ file:///croot/cffi_1670423208954/work
