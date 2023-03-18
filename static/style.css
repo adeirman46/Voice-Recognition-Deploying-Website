@@ -1,0 +1,59 @@
+body {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/macos-monterey-wwdc-21-stock-dark-mode-5k-2560x1440-5585.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.speech-recognition {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.speech-recognition h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.speech-recognition form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.speech-recognition input[type="file"] {
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.speech-recognition input[type="submit"] {
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .speech-recognition {
+        max-width: 600px;
+        margin-top: 50vh;
+        transform: translateY(-50%);
+    }
+}

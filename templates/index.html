@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="speech-recognition">
+        <h1>Speech Recognition</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" accept=".wav">
+            <input type="submit" value="Recognize">
+        </form>
+    </div>
+</body>
+
+</html>

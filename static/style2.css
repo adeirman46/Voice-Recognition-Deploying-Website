@@ -1,0 +1,52 @@
+body {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/macos-monterey-wwdc-21-stock-dark-mode-5k-2560x1440-5585.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .glass-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* darker background color */
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .result-container h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  
+  .result-container p {
+    font-size: 24px;
+    color: #ffffff; /* white text color */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); /* add text shadow */
+    font-family: sans-serif;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .result-container {
+      max-width: 600px;
+    }
+  }
+  
