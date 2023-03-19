@@ -4,9 +4,6 @@ certifi
 cffi 
 charset-normalizer 
 click
-conda
-conda-content-trust 
-conda-package-handling 
 cryptography 
 Flask
 gunicorn
