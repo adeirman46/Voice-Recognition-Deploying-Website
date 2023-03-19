@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from voice_recog import VoiceRecognition
+import os
 
 app = Flask(__name__)
 
@@ -8,7 +9,9 @@ app = Flask(__name__)
 def index():
     if request.method == 'POST':
         file = request.files['file']
-        file_path = "./" + file.filename
+        directory = request.form['directory']
+        file_path = os.path.join(directory, file.filename)
+        file.save(file_path)
         recog = VoiceRecognition(file_path)
         recognized_text = recog.get_transription()
         return render_template('result.html', text=recognized_text)
@@ -17,4 +20,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug = True)

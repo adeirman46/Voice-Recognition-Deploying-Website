@@ -10,7 +10,8 @@
     <div class="speech-recognition">
         <h1>Speech Recognition</h1>
         <form method="post" enctype="multipart/form-data">
-            <input type="file" name="file" id="file" accept=".wav">
+            <input type="file" name="file">
+            <input type="hidden" name="directory">
             <input type="submit" value="Recognize">
         </form>
     </div>
